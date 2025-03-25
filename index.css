@@ -1,0 +1,72 @@
+body{
+  min-height: 100%;
+  background-color: rgb(57, 62, 70);
+}
+
+
+.top{
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(34, 40, 49);
+  border-radius: 50px;
+}
+
+.compo_frase{
+
+  padding: 60px;
+
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(0, 173, 181);
+  border-radius: 50px;
+  margin-top: 3%;
+}
+
+.botao_frase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+}
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
